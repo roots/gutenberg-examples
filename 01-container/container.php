@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Plugin Name:     Container
  * Description:     Example block written with ESNext standard and JSX support – build step required.
@@ -6,8 +7,6 @@
  * Author:          The WordPress Contributors
  * License:         GPL-2.0-or-later
  * Text Domain:     create-block
- *
- * @package         create-block
  */
 
 /**
