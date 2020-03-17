@@ -13,7 +13,7 @@ module.exports = {
   globals: {
     wp: true,
     window: true,
-		document: true,
+    document: true,
   },
   env: {
     node: true,
@@ -42,13 +42,13 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     quotes: [
-			'error',
-			'single',
-			{
+      'error',
+      'single',
+      {
         allowTemplateLiterals: true,
         avoidEscape: true
       },
-		],
+    ],
     'comma-dangle': [
       'error',
       {
