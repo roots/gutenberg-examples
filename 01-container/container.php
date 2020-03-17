@@ -32,7 +32,7 @@ add_action('init', function () {
     foreach (['editor', 'style'] as $asset) {
         wp_register_style(
             "create-block-container-block-{$asset}",
-            plugins_url($asset, __FILE__),
+            plugins_url($asset, __FILE__)
         );
     }
 
