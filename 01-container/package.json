@@ -4,16 +4,21 @@
 	"description": "Example block written with ESNext standard and JSX support – build step required.",
 	"author": "The WordPress Contributors",
 	"license": "GPL-2.0-or-later",
-	"main": "build/index.js",
+	"main": "src/index.js",
 	"scripts": {
-		"build": "wp-scripts build",
-		"format:js": "wp-scripts format-js",
-		"lint:css": "wp-scripts lint-style",
-		"lint:js": "wp-scripts lint-js",
 		"start": "wp-scripts start",
+		"build": "npm-run-all lint wp:build",
+		"lint": "npm-run-all lint:*",
+		"wp:build": "wp-scripts build",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "./node_modules/.bin/eslint .",
 		"packages-update": "wp-scripts packages-update"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^7.1.2"
+		"@wordpress/scripts": "^7.1.2",
+		"eslint": "^6.8.0",
+		"eslint-plugin-jsx-a11y": "^6.2.3",
+		"eslint-plugin-react": "^7.19.0",
+		"npm-run-all": "^4.1.5"
 	}
 }
